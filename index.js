@@ -3,7 +3,7 @@ const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 
-const PORT = 80
+const PORT = 80||443
 
 const app = express()
 

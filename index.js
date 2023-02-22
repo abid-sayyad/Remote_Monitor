@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 //setup mongoose
-const mongodbConnString = `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@${process.env.CLUSTER_NAME_CONN}/${process.env.DB_NAME}`
+const mongodbConnString = `mongodb+srv://$hellouser	:$kUwNcKaxMugCX4m@$patient0.jzbvmqt.mongodb.net/$Patient0`
 // console.log(mongodbConnString);
 
 mongoose.connect(mongodbConnString)

@@ -15,13 +15,14 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 //setup mongoose
-const mongodbConnString = `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@${process.env.CLUSTER_NAME_CONN}/${process.env.DB_NAME}`
+const mongodbConnString = "mongodb+srv://hellouser:FkUwNcKaxMugCX4m@patient0.jzbvmqt.mongodb.net/Patient0"
 // console.log(mongodbConnString);
 
 mongoose.connect(mongodbConnString)
 
 mongoose.connection.on("error", function(error) {
   console.log(error)
+  console.log("fuck you")
 })
 
 mongoose.connection.on("open", function() {
